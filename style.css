@@ -1,0 +1,126 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#iframe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+}
+
+    #play-screen{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 90%;
+        font-size: 2rem;
+    }
+
+        #card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            height: 90%;
+        }
+
+        .card {
+            display: block;
+            width: 17%;
+            height: 17%;
+            margin: 0% 1%;
+            border: solid black 1px;
+            border-radius: 5%;
+        }
+
+    #initial-screen{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 70%;
+    }
+
+        #initial-screen-title {
+            font-size: 2rem;
+            margin-bottom: 1%
+        }
+
+        #initial-screen-subtitle {
+            font-size: 2rem;
+            margin-bottom: 1%
+        }
+
+        .button {
+            width: 80%;
+            height: 20%;
+            margin: 2%;
+            padding: 0%;
+            font-size: 2rem;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+            border-radius: 25%;
+            line-height: 1.5rem;
+        }        
+
+        .button-info {
+            font-size: 1rem;
+        }
+
+        #easy {
+            background-color: lightgreen;
+        }
+
+        #normal {
+            background-color: #e4eb1c;
+        }
+
+        #hard {
+            background-color: #d92c21
+            
+        }
+        
+@media (max-width: 992px) {
+    #iframe-container {
+        width: 560px;
+        height: 560px;
+    }
+
+    html {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 768px) {
+    #iframe-container {
+        width: 420px;
+        height: 420px;
+    }
+}
+
+@media (max-width: 576px) {
+    #iframe-container {
+        width: 350px;
+        height: 350px;
+    }
+
+    html {
+        font-size: 6px;
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Game</title>
+</head>
+<body>
+    <div id="iframe-container">
+
+        <div id="initial-screen">
+            <h1 id="initial-screen-title">MEMORY GAME!</h1>
+            <h2 id="initial-screen-subtitle">Select your difficult:</h2>
+            <button id="easy" class="button">Easy<br><span class="button-info">up to 20 mistakes</span></button>
+            <button id="normal" class="button">Normal<br><span class="button-info">up to 15 mistakes</span></button>
+            <button id="hard" class="button">Hard<br><span class="button-info">up to 10 mistakes</span></button>
+        </div>
+
+        <div id="play-screen">
+            <h3 id="mistakes-title">Remaining Mistakes: <span id="mistakes"></span></h3> 
+            <div id="card-grid"></div>
+            <h3><span id="message"></span></h3>
+            <button id="play-again">Play Again!</button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
