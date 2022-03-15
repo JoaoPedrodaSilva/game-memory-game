@@ -16,85 +16,85 @@ let chosenCards = []
 let matchedCards = []
 const cards = [
     {
-        name: 'red-mushroom',
-        img: 'img/red-mushroom.png'
+        name: 'bread',
+        img: 'img/bread.PNG'
     },
     {
-        name: 'green-mushroom',
-        img: 'img/green-mushroom.png'
+        name: 'chicken',
+        img: 'img/chicken.PNG'
     },
     {
-        name: 'red-shell',
-        img: 'img/red-shell.png'
+        name: 'cupcake',
+        img: 'img/cupcake.PNG'
     },
     {
-        name: 'green-shell',
-        img: 'img/green-shell.png'
+        name: 'donut',
+        img: 'img/donut.PNG'
     },
     {
-        name: 'star',
-        img: 'img/star.png'
+        name: 'fries',
+        img: 'img/fries.PNG'
     },
     {
-        name: 'fire-flower',
-        img: 'img/fire-flower.png'
+        name: 'hamburger',
+        img: 'img/hamburger.PNG'
     },
     {
-        name: 'boomerang-flower',
-        img: 'img/boomerang-flower.png'
+        name: 'hotdog',
+        img: 'img/hotdog.PNG'
     },
     {
-        name: 'egg',
-        img: 'img/egg.png'
+        name: 'icecream',
+        img: 'img/icecream.PNG'
     },
     {
-        name: 'coin',
-        img: 'img/coin.png'
+        name: 'pizza',
+        img: 'img/pizza.PNG'
     },
     {
-        name: 'banana',
-        img: 'img/banana.png'
+        name: 'popcorn',
+        img: 'img/popcorn.PNG'
     },
     {
-        name: 'red-mushroom',
-        img: 'img/red-mushroom.png'
+        name: 'bread',
+        img: 'img/bread.PNG'
     },
     {
-        name: 'green-mushroom',
-        img: 'img/green-mushroom.png'
+        name: 'chicken',
+        img: 'img/chicken.PNG'
     },
     {
-        name: 'red-shell',
-        img: 'img/red-shell.png'
+        name: 'cupcake',
+        img: 'img/cupcake.PNG'
     },
     {
-        name: 'green-shell',
-        img: 'img/green-shell.png'
+        name: 'donut',
+        img: 'img/donut.PNG'
     },
     {
-        name: 'star',
-        img: 'img/star.png'
+        name: 'fries',
+        img: 'img/fries.PNG'
     },
     {
-        name: 'fire-flower',
-        img: 'img/fire-flower.png'
+        name: 'hamburger',
+        img: 'img/hamburger.PNG'
     },
     {
-        name: 'boomerang-flower',
-        img: 'img/boomerang-flower.png'
+        name: 'hotdog',
+        img: 'img/hotdog.PNG'
     },
     {
-        name: 'egg',
-        img: 'img/egg.png'
+        name: 'icecream',
+        img: 'img/icecream.PNG'
     },
     {
-        name: 'coin',
-        img: 'img/coin.png'
+        name: 'pizza',
+        img: 'img/pizza.PNG'
     },
     {
-        name: 'banana',
-        img: 'img/banana.png'
-    }    
+        name: 'popcorn',
+        img: 'img/popcorn.PNG'
+    }
 ]
 
 const startGame = () => {
@@ -119,7 +119,7 @@ const createCards = () => {
         const card = document.createElement('img')
         card.setAttribute('index', `${i}`)
         card.setAttribute('name', c.name)        
-        card.setAttribute('src', 'img/face-down.png')
+        card.setAttribute('src', 'img/face-down.PNG')
         card.setAttribute('class', 'card')
         card.addEventListener('click', flipCard)
         gridDisplay.append(card)        
@@ -157,13 +157,13 @@ const checkMatch = () => {
         chosenCards[1].style.border = 'solid green 3px'
         if (matchedCards.length === cards.length / 2) {            
             messageDisplay.style.color = 'green'
-            messageDisplay.innerHTML = 'CONGRATULATIONS! YOU FOUND THEM ALL!'
+            messageDisplay.innerHTML = 'CONGRATULATIONS!!'
             gameOverFlag = true
             allCardsUnclickable()
             playAgainButton.style.display = 'block'
             playAgain()           
         } else {
-            messageDisplay.innerHTML = "it's a MATCH!!! Keep up the good work..."
+            messageDisplay.innerHTML = "It's a match, Keep it up!"
             allCardsClickable()
         }
 
@@ -173,7 +173,7 @@ const checkMatch = () => {
         mistakesDisplay.innerHTML = remainingMistakes 
         if (remainingMistakes === 0) {
             messageDisplay.style.color = 'red'
-            messageDisplay.innerHTML = 'MAMA MIA!! GAME OVER...'            
+            messageDisplay.innerHTML = 'GAME OVER...'            
             allCardsFaceUp()
             allCardsUnclickable()
             gameOverFlag = true
@@ -185,8 +185,8 @@ const checkMatch = () => {
         }
 
         if (!gameOverFlag) {
-            chosenCards[0].setAttribute('src', 'img/face-down.png')
-            chosenCards[1].setAttribute('src', 'img/face-down.png') 
+            chosenCards[0].setAttribute('src', 'img/face-down.PNG')
+            chosenCards[1].setAttribute('src', 'img/face-down.PNG') 
         }               
     }     
     chosenCards = []
@@ -202,7 +202,7 @@ const allCardsFaceUp = () => {
 const allCardsFaceDown = () => {
     allCards = document.querySelectorAll('.card')
     Array.from(allCards).map( (c, i) => {
-        c.setAttribute('src', 'img/face-down.png')
+        c.setAttribute('src', 'img/face-down.PNG')
     })
 }
 
@@ -223,7 +223,7 @@ const allCardsClickable = () => {
 const cleaningBorders = () => {
     allCards = document.querySelectorAll('.card')
     Array.from(allCards).map( (c, i) => {
-        c.style.border = 'solid black 1px'
+        c.style.border = 'solid black 3px'
     })
 }
 

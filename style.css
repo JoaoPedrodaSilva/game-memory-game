@@ -26,8 +26,8 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 90%;
-        height: 90%;
+        width: 95%;
+        height: 95%;
         font-size: 2rem;
     }
 
@@ -42,10 +42,10 @@ body {
 
         .card {
             display: block;
-            width: 17%;
-            height: 17%;
+            width: 15%;
+            height: 15%;
             margin: 0% 1%;
-            border: solid black 1px;
+            border: solid black 3px;
             border-radius: 5%;
         }
 
