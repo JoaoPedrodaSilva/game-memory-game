@@ -137,7 +137,6 @@ function flipCard() {
     if (!gameOverFlag) {
         messageDisplay.innerHTML = 'Choose the second card...'
     }
-    console.log(this)
     this.setAttribute('src', cards[this.getAttribute('index')].img)
     this.removeEventListener('click', flipCard)
     chosenCards.push(this)
