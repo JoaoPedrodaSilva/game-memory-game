@@ -23,8 +23,8 @@ body {
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    max-width: 475px;
-    max-height: 475px;
+    max-width: 500px;
+    max-height: 575px;
     background-color: white;
 }
 
